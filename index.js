@@ -13,9 +13,11 @@ app.use(express.json());
 
 
 // Allow request for frontend port
-app.use(cors({
-  origin: "http://localhost:5173",
-}))
+// app.use(cors({
+//   origin: "http://localhost:5173",
+// }))
+
+app.use(cors())
 
 // /api yehone mangnawm route
 app.use('/api', mainRouter);
